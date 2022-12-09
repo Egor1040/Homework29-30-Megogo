@@ -1,3 +1,5 @@
+@import "./common";
+
 @font-face {
     font-family: 'TT Norms Pro';
     src: url('../fonts/TTNormsPro-Medium.eot');
@@ -10,20 +12,7 @@
     font-style: normal;
 }
 
-* {
-	margin: 0;
-	padding: 0;
-	box-sizing: border-box;	
-}
-
-body {
-	text-decoration: none;
-}
-
-li {
-	list-style: none;
-}
-.hero-background {
+.background {
 	width: 1680px;
 	height: 1050px;
 	background: url(../img/HeroBackground.jpg);
@@ -31,7 +20,7 @@ li {
 }
 
 
-.film-card{
+.card{
 	width: 1000px;
 	height: 700px;
 	background: url(../img/backgroud-img.jpg);
@@ -56,76 +45,64 @@ li {
 .menu {
 	display: flex;
 	align-items: center;
-}
-
-.menu-item a {
-	color: white;
-	text-decoration: none;
-	font-weight: bold;
-	text-transform: capitalize;
-	font-size: 18px;
-	margin: 6px;
-}
-
-.menu-item-img {
-	width: 30px;
-	margin-left:15px;
-	margin-top: 5px;
+	&__item a {
+		color: white;
+		text-decoration: none;
+		font-weight: bold;
+		text-transform: capitalize;
+		font-size: 18px;
+		margin: 6px;
+	}
+	&__item-img {
+		width: 30px;
+		margin-left:15px;
+		margin-top: 5px;
+	}
 }
 
 .tariffs {
+	margin: 6px;
 	width: 270px;
 	display: flex;
 	align-items: center;
 	justify-content: flex-end;
+	& a {
+		color: white;
+		text-decoration: none;
+		margin: 6px;
+	}
+	&__buttom {
+		border: 2px solid white;
+		width: 85px;
+		height: 30px;
+		border-radius: 5px;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+	&__search img {
+		width: 20px;
+		height: 20px;
+	}
 }
 
-.tariffs a {
-	color: white;
-	text-decoration: none;
-	margin: 6px;
-}
-
-.tariff {
-	margin: 6px;
-}
-
-.tariff-border {
-	border: 2px solid white;
-	width: 85px;
-	height: 30px;
-	border-radius: 5px;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-}
-
-
-.tariff img {
-	width: 20px;
-	height: 20px;
-}
-
-.sound-control {
+.sound {
 	margin: 20px;
 	display: flex;
 	justify-content: flex-end;
-
-}
-
-.sound-icon {
-	width: 70px;
-	height: 70px;
-	border: 0.5px solid white;
-	border-radius: 50%;
-	background-color: rgba(101, 104, 108, 0.5);
-	display: flex;
-	justify-content: center;
-	align-items: center;
-}
-
-.sound-icon img {
-	width: 50px;
+	&__icon {
+		width: 70px;
+		height: 70px;
+		border: 0.5px solid rgba(101, 104, 108, 0.5);
+		border-radius: 50%;
+		background-color: rgba(101, 104, 108, 0.5);
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+	&__icon img {
+		width: 50px;
+	}
 }
 
 .film-content {
