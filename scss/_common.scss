@@ -24,3 +24,20 @@ body {
 li {
 	list-style: none;
 }
+
+.background {
+	max-width: 1920px;
+	height: 1080px;
+	background: url(../img/HeroBackground.jpg);
+	display: flex;
+	justify-content: center;
+}
+
+.card{
+	max-width: 1140px;
+	height: 700px;
+	background: url(../img/backgroud-img.jpg);
+	background-size: cover;
+	display: flex;
+	flex-direction: column;
+}

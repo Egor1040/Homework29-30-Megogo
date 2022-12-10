@@ -184,7 +184,6 @@ li {
   width: 200px;
   height: 250px;
 }
-
 .film__logo img {
   width: 200px;
   height: 250px;
@@ -196,16 +195,14 @@ li {
   height: 220px;
 }
 
-.within-info {
+.within {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
 }
-
-.within-info p {
-  margin: 4px;
+.within p {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -217,8 +214,20 @@ li {
           align-items: center;
   font-weight: bold;
 }
-
-.within__action-function {
+.within__rate {
+  width: 350px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.within__rate p {
+  color: white;
+  font-size: 13px;
+}
+.within__rate_action-function {
   width: 60px;
   height: 20px;
   background: OrangeRed;
@@ -235,23 +244,10 @@ li {
   font-size: 11px;
   color: white;
 }
-
-.within__max-function {
+.within__rate_max-function {
   color: darkorange;
   font-size: 13px;
 }
-
-.within__rate {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-
-.within__rate p {
-  color: white;
-  font-size: 13px;
-}
-
 .within__film-name {
   height: 100px;
   width: 300px;
@@ -270,7 +266,6 @@ li {
 
 .panel {
   width: 390px;
-  height: 90px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -297,14 +292,12 @@ li {
   margin-right: 20px;
   margin-top: 4px;
 }
-
 .buttoms__img {
   width: 20px;
   height: 15px;
   margin-right: 3px;
   background: orange;
 }
-
 .buttoms__try-sell {
   width: 140px;
   height: 20px;
@@ -328,7 +321,6 @@ li {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
 }
-
 .favourite__icon {
   border: 2px solid grey;
   border-radius: 5%;
@@ -344,12 +336,10 @@ li {
       -ms-flex-align: end;
           align-items: flex-end;
 }
-
 .favourite__icon img {
   width: 35px;
   height: 35px;
 }
-
 .favourite__text {
   width: 140px;
   height: 20px;
@@ -359,7 +349,6 @@ li {
 }
 
 .rating {
-  margin-top: 4px;
   width: 80px;
   height: 72px;
   display: -webkit-box;
@@ -377,46 +366,14 @@ li {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
 }
-
 .rating__click-icon img {
   width: 50px;
   height: 40px;
 }
-
-.rating__number-followers {
-  width: 35px;
-  height: 15px;
-  font-size: 10px;
-  color: Gainsboro;
-}
-
-.rating {
-  margin-top: 4px;
-  width: 80px;
-  height: 72px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-.rating__click-icon img {
-  width: 50px;
-  height: 40px;
-}
-
 .rating__number-followers {
   width: 35px;
   height: 15px;
