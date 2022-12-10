@@ -1,3 +1,15 @@
+@font-face {
+    font-family: 'TT Norms Pro';
+    src: url('../fonts/TTNormsPro-Medium.eot');
+    src: local('../fonts/TT Norms Pro Medium'), local('TTNormsPro-Medium'),
+        url('../fonts/TTNormsPro-Medium.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/TTNormsPro-Medium.woff2') format('woff2'),
+        url('../fonts/TTNormsPro-Medium.woff') format('woff'),
+        url('../fonts/TTNormsPro-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+}
+
 * {
 	margin: 0;
 	padding: 0;
@@ -6,6 +18,7 @@
 
 body {
 	text-decoration: none;
+	font-family: 'TT Norms Pro', sans-serif;
 }
 
 li {

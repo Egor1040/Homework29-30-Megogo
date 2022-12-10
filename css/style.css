@@ -1,3 +1,10 @@
+@font-face {
+  font-family: "TT Norms Pro";
+  src: url("../fonts/TTNormsPro-Medium.eot");
+  src: local("../fonts/TT Norms Pro Medium"), local("TTNormsPro-Medium"), url("../fonts/TTNormsPro-Medium.eot?#iefix") format("embedded-opentype"), url("../fonts/TTNormsPro-Medium.woff2") format("woff2"), url("../fonts/TTNormsPro-Medium.woff") format("woff"), url("../fonts/TTNormsPro-Medium.ttf") format("truetype");
+  font-weight: 500;
+  font-style: normal;
+}
 * {
   margin: 0;
   padding: 0;
@@ -7,30 +14,27 @@
 
 body {
   text-decoration: none;
+  font-family: "TT Norms Pro", sans-serif;
 }
 
 li {
   list-style: none;
 }
 
-@font-face {
-  font-family: "TT Norms Pro";
-  src: url("../fonts/TTNormsPro-Medium.eot");
-  src: local("../fonts/TT Norms Pro Medium"), local("TTNormsPro-Medium"), url("../fonts/TTNormsPro-Medium.eot?#iefix") format("embedded-opentype"), url("../fonts/TTNormsPro-Medium.woff2") format("woff2"), url("../fonts/TTNormsPro-Medium.woff") format("woff"), url("../fonts/TTNormsPro-Medium.ttf") format("truetype");
-  font-weight: 500;
-  font-style: normal;
-}
 .background {
-  width: 1680px;
-  height: 1050px;
+  max-width: 1920px;
+  height: 1080px;
   background: url(../img/HeroBackground.jpg);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .card {
-  width: 1000px;
+  max-width: 1140px;
   height: 700px;
   background: url(../img/backgroud-img.jpg);
   background-size: cover;
@@ -41,39 +45,50 @@ li {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  margin: auto;
-  font-family: "TT Norms Pro", sans-serif;
 }
 
 .header {
-  background: black;
+  height: 50px;
+  background: #1a1a1a;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
-
-.logo img {
+.header__logo {
+  height: 20px;
+}
+.header__logo img {
   width: 100px;
   height: 20px;
 }
 
 .menu {
+  width: 650px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.menu__item :hover {
+  color: #ff3300;
 }
 .menu__item a {
   color: white;
   text-decoration: none;
   font-weight: bold;
   text-transform: capitalize;
-  font-size: 18px;
+  font-size: 14px;
   margin: 6px;
 }
 .menu__item-img {
@@ -91,9 +106,8 @@ li {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
 }
 .tariffs a {
   color: white;
@@ -130,11 +144,11 @@ li {
           justify-content: flex-end;
 }
 .sound__icon {
-  width: 70px;
-  height: 70px;
-  border: 0.5px solid rgba(101, 104, 108, 0.5);
+  width: 50px;
+  height: 50px;
+  border: 2px solid rgb(138, 152, 121);
   border-radius: 50%;
-  background-color: rgba(101, 104, 108, 0.5);
+  background-color: rgba(20, 21, 20, 0.6);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -145,38 +159,44 @@ li {
       -ms-flex-align: center;
           align-items: center;
 }
+.sound__icon a {
+  width: 25px;
+  height: 20px;
+}
 .sound__icon img {
-  width: 50px;
+  width: 25px;
+  height: 20px;
 }
 
-.film-content {
+.film {
   height: 290px;
-  width: 1000px;
   margin-top: auto;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   background: radial-gradient(black, rgba(0, 0, 0, 0.3490196078));
 }
-
-.film-logo {
+.film__logo {
   margin: 15px;
   width: 200px;
   height: 250px;
 }
 
-.film-logo img {
+.film__logo img {
   width: 200px;
   height: 250px;
 }
 
-.down-about {
+.description {
   margin-top: 44px;
   width: 400px;
   height: 220px;
 }
 
-.menu-down {
+.within-info {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -184,7 +204,7 @@ li {
       flex-wrap: wrap;
 }
 
-.menu-down p {
+.within-info p {
   margin: 4px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -198,7 +218,7 @@ li {
   font-weight: bold;
 }
 
-.action-option {
+.within__action-function {
   width: 60px;
   height: 20px;
   background: OrangeRed;
@@ -216,23 +236,23 @@ li {
   color: white;
 }
 
-.max-option {
+.within__max-function {
   color: darkorange;
   font-size: 13px;
 }
 
-.text-rate {
+.within__rate {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
 
-.text-rate p {
+.within__rate p {
   color: white;
   font-size: 13px;
 }
 
-.film-name {
+.within__film-name {
   height: 100px;
   width: 300px;
   display: -webkit-box;
@@ -248,7 +268,7 @@ li {
   color: white;
 }
 
-.bottom-option {
+.panel {
   width: 390px;
   height: 90px;
   display: -webkit-box;
@@ -256,7 +276,7 @@ li {
   display: flex;
 }
 
-.option-watch {
+.buttoms__buttom-watch {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -278,21 +298,21 @@ li {
   margin-top: 4px;
 }
 
-.option-play-film {
+.buttoms__img {
   width: 20px;
   height: 15px;
   margin-right: 3px;
   background: orange;
 }
 
-.watch-text {
+.buttoms__try-sell {
   width: 140px;
   height: 20px;
   font-size: 10px;
   color: Gainsboro;
 }
 
-.add-favorite {
+.favourite {
   width: 70px;
   height: 50px;
   margin-top: 4px;
@@ -309,7 +329,7 @@ li {
       flex-wrap: wrap;
 }
 
-.add-icon {
+.favourite__icon {
   border: 2px solid grey;
   border-radius: 5%;
   width: 70px;
@@ -320,17 +340,17 @@ li {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
 }
 
-.add-icon img {
+.favourite__icon img {
   width: 35px;
   height: 35px;
 }
 
-.add-text {
+.favourite__text {
   width: 140px;
   height: 20px;
   font-size: 10px;
@@ -338,7 +358,7 @@ li {
   margin-top: 1px;
 }
 
-.like-title {
+.rating {
   margin-top: 4px;
   width: 80px;
   height: 72px;
@@ -359,19 +379,19 @@ li {
           align-items: center;
 }
 
-.like-click img {
+.rating__click-icon img {
   width: 50px;
   height: 40px;
 }
 
-.like-text {
+.rating__number-followers {
   width: 35px;
   height: 15px;
   font-size: 10px;
   color: Gainsboro;
 }
 
-.dislike-title {
+.rating {
   margin-top: 4px;
   width: 80px;
   height: 72px;
@@ -392,12 +412,12 @@ li {
           align-items: center;
 }
 
-.dislike-click img {
+.rating__click-icon img {
   width: 50px;
   height: 40px;
 }
 
-.dislike-text {
+.rating__number-followers {
   width: 35px;
   height: 15px;
   font-size: 10px;
