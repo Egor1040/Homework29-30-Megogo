@@ -190,12 +190,12 @@ li {
 }
 .film__logo {
   margin: 15px;
-  width: 200px;
-  height: 250px;
+  width: 140px;
+  height: 210px;
 }
 .film__logo img {
-  width: 200px;
-  height: 250px;
+  width: 140px;
+  height: 210px;
 }
 
 .description {
@@ -231,9 +231,6 @@ li {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-}
-.within__rate p:hover {
-  color: #ff3300;
 }
 .within__rate p {
   color: white;
@@ -293,12 +290,12 @@ li {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  width: 140px;
-  height: 50px;
-  border: 2px solid orange;
-  border-radius: 6%;
+  width: 161px;
+  height: 47px;
+  border: 2px solid rgb(255, 73, 0);
+  border-radius: 5px;
   color: white;
-  background: orange;
+  background: rgb(255, 73, 0);
   font-size: 16px;
   text-decoration: none;
   margin-right: 20px;
@@ -306,20 +303,20 @@ li {
 }
 .buttoms__img {
   width: 20px;
-  height: 15px;
+  height: 17px;
   margin-right: 3px;
-  background: orange;
+  background: rgb(255, 73, 0);
 }
 .buttoms__try-sell {
-  width: 140px;
+  width: 161px;
   height: 20px;
   font-size: 10px;
   color: Gainsboro;
 }
 
 .favourite {
-  width: 70px;
-  height: 50px;
+  width: 87px;
+  height: 47px;
   margin-top: 4px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -336,8 +333,8 @@ li {
 .favourite__icon {
   border: 2px solid grey;
   border-radius: 5%;
-  width: 70px;
-  height: 49px;
+  width: 87px;
+  height: 47px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -378,13 +375,12 @@ li {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
 }
 .rating__click-icon img {
-  width: 50px;
-  height: 40px;
+  width: 30px;
+  height: 28px;
 }
 .rating__number-followers {
   width: 35px;
