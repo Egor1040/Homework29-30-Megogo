@@ -64,7 +64,7 @@ li {
   height: 20px;
 }
 .header__logo img {
-  width: 110px;
+  width: 120px;
   height: 20px;
 }
 
@@ -84,9 +84,9 @@ li {
   color: #ff3300;
 }
 .menu__item a {
-  color: white;
+  color: #FFFFFF;
   text-decoration: none;
-  font-weight: bold;
+  font-weight: normal;
   text-transform: capitalize;
   font-size: 14px;
   margin: 6px;
@@ -109,13 +109,16 @@ li {
       -ms-flex-align: center;
           align-items: center;
 }
+.tariffs a:hover {
+  color: #ff3300;
+}
 .tariffs a {
-  color: white;
+  color: #FFFFFF;
   text-decoration: none;
   margin: 6px;
 }
 .tariffs__buttom {
-  border: 2px solid white;
+  border: 2px solid #FFFFFF;
   width: 85px;
   height: 30px;
   border-radius: 5px;
@@ -228,6 +231,9 @@ li {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+}
+.within__rate p:hover {
+  color: #ff3300;
 }
 .within__rate p {
   color: white;
