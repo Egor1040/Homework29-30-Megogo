@@ -1,0 +1,26 @@
+@mixin flex($jc: center, $ai: center) {
+	display: flex;
+	justify-content: $jc;
+	align-items: $ai;
+}
+
+.sound {
+	margin: 20px;
+	@include flex($jc: flex-end,$ai: none);
+	&__icon {
+		width: 50px;
+		height: 50px;
+		border: 2px solid $SoundBorderIcon;
+		border-radius: 50%;
+		background-color: $SoundBgIcon;
+		@include flex()
+	}
+	&__icon a {
+		width: 25px;
+		height: 20px;
+	}
+	&__icon img {
+		width: 25px;
+		height: 20px;
+	}
+}

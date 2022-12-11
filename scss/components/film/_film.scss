@@ -1,0 +1,145 @@
+@mixin flex($jc: center, $ai: center) {
+	display: flex;
+	justify-content: $jc;
+	align-items: $ai;
+}
+
+.film {
+	height: 290px;
+	margin-top: auto;
+	@include flex($jc:none,$ai:center);
+	background: $FilmBg;
+	&__logo {
+		margin: 15px;
+		width: 140px;
+		height: 210px;
+	}
+	&__logo img {
+		width: 140px;
+		height: 210px;
+	}
+}
+
+.description {
+	margin-top: 44px;
+	width: 400px;
+	height: 220px;
+}
+
+.within {
+	display: flex;
+	flex-wrap: wrap;
+	&  p {
+		@include flex();
+		font-weight: bold;
+	}
+	&__rate {
+		width: 350px;
+		display: flex;
+		justify-content: space-between;
+	}
+	&__rate p {
+		color: $WithinRateText;
+		font-size: 13px;
+	}
+	&__rate_action-function {
+		width: 60px;
+		height: 20px;
+		background: OrangeRed;
+		border-radius: 5%;
+		@include flex();
+		font-size: 11px;
+		color: white;
+	}
+	&__rate_max-function {
+		color: darkorange;
+		font-size: 13px;
+	}
+	&__film-name {
+		height: 100px;
+		width: 300px;
+		@include flex($jc: flex-start,$ai: center);
+		font-size: 30px;
+		color: $FilmNameTitleColor;
+	}
+}
+
+.panel {
+	width: 390px;
+	display: flex;
+}
+
+.buttoms {
+	&__buttom-watch {
+		@include flex();
+		width: 161px;
+		height: 47px;
+		border: 2px solid rgb(255,73,0);
+		border-radius: 5px;
+		color: white;
+		background: rgb(255,73,0);
+		font-size: 16px;
+		text-decoration: none;
+		margin-right: 20px;
+		margin-top: 4px;
+	}
+	&__img {
+		width: 20px;
+		height: 17px;
+		margin-right: 3px;
+		background: rgb(255,73,0);
+	}
+	&__try-sell {
+		width: 161px;
+		height: 20px;
+		font-size: 10px;
+		color: $PanelColorTextSub;
+	}
+}
+
+.favourite {
+	width: 87px;
+	height: 47px;
+	margin-top: 4px;
+	@include flex();
+	flex-wrap: wrap;
+	&__icon {
+		border: 2px solid grey;
+		border-radius: 5%;
+		width: 87px;
+		height: 47px;
+		@include flex($jc: center,$ai: flex-end);
+	}
+	&__icon img {
+		width: 35px;
+		height: 35px;
+	}
+	&__text {
+		width: 140px;
+		height: 20px;
+		font-size: 10px;
+		color: $PanelColorTextSub;
+		margin-top: 1px;
+	}
+}
+
+.rating {
+	width: 80px;
+	height: 72px;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	flex-direction: column;
+	align-items: center;
+	justify-content: space-around;
+	&__click-icon img {
+		width: 30px;
+		height: 28px;
+	}
+	&__number-followers {
+		width: 35px;
+		height: 15px;
+		font-size: 10px;
+		color: $PanelColorTextSub;
+	}
+}

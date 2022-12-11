@@ -1,0 +1,64 @@
+@mixin flex($jc: center, $ai: center) {
+	display: flex;
+	justify-content: $jc;
+	align-items: $ai;
+}
+
+.header {
+	height: 50px;
+	background: $HeaderBackground;
+	@include flex($jc: space-between,$ai: center);
+	&__logo {
+		height: 20px;
+	}
+	&__logo img {
+		width: 120px;
+		height: 20px;
+	}
+}
+
+.menu {
+	width: 650px;
+	@include flex($jc: space-between,$ai: center);
+	&__item :hover {
+		color: $MenuItemHover;
+	}
+	&__item a {
+		color: $MenuItemColor;
+		text-decoration: none;
+		font-weight: normal;
+		text-transform: capitalize;
+		font-size: 14px;
+		margin: 6px;
+	}
+	&__item-img {
+		width: 30px;
+		margin-left:15px;
+		margin-top: 5px;
+	}
+}
+
+.tariffs {
+	margin: 6px;
+	width: 270px;
+	@include flex ($jc: space-around,$ai: center);
+	& a:hover {
+		color: $MenuItemHover;
+	}
+	& a {
+		color: $MenuItemColor;
+		text-decoration: none;
+		margin: 6px;
+	}
+	&__buttom {
+		border: 2px solid $MenuItemColor;
+		width: 85px;
+		height: 30px;
+		border-radius: 5px;
+		@include flex();
+	}
+	&__search img {
+		width: 20px;
+		height: 20px;
+	}
+}
