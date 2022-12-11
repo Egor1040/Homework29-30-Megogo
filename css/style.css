@@ -23,7 +23,7 @@ li {
 
 .background {
   max-width: 1920px;
-  height: 1080px;
+  max-height: 1080px;
   background: url(../img/HeroBackground.jpg);
   display: -webkit-box;
   display: -ms-flexbox;
@@ -34,7 +34,7 @@ li {
 }
 
 .card {
-  max-width: 1140px;
+  width: 1140px;
   height: 700px;
   background: url(../img/backgroud-img.jpg);
   background-size: cover;
@@ -61,14 +61,15 @@ li {
           align-items: center;
 }
 .header__logo {
-  height: 20px;
+  max-height: 20px;
 }
 .header__logo img {
-  width: 120px;
-  height: 20px;
+  max-width: 120px;
+  max-height: 20px;
 }
 
 .menu {
+  margin-right: 78px;
   width: 650px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -88,18 +89,17 @@ li {
   text-decoration: none;
   font-weight: normal;
   text-transform: capitalize;
-  font-size: 14px;
-  margin: 6px;
+  font-size: 16px;
+  letter-spacing: 0.8px;
 }
 .menu__item-img {
   width: 30px;
-  margin-left: 15px;
   margin-top: 5px;
 }
 
 .tariffs {
   margin: 6px;
-  width: 270px;
+  width: 230px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -115,12 +115,12 @@ li {
 .tariffs a {
   color: #FFFFFF;
   text-decoration: none;
-  margin: 6px;
+  margin: 15px;
 }
 .tariffs__buttom {
-  border: 2px solid #FFFFFF;
-  width: 85px;
-  height: 30px;
+  border: 1px solid #FFFFFF;
+  max-width: 85px;
+  max-height: 30px;
   border-radius: 5px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -133,8 +133,8 @@ li {
           align-items: center;
 }
 .tariffs__search img {
-  width: 20px;
-  height: 20px;
+  max-width: 20px;
+  max-height: 20px;
 }
 
 .sound {

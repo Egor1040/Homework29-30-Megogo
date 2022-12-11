@@ -9,15 +9,16 @@
 	background: $HeaderBackground;
 	@include flex($jc: space-between,$ai: center);
 	&__logo {
-		height: 20px;
+		max-height: 20px;
 	}
 	&__logo img {
-		width: 120px;
-		height: 20px;
+		max-width: 120px;
+		max-height: 20px;
 	}
 }
 
 .menu {
+	margin-right: 78px;
 	width: 650px;
 	@include flex($jc: space-between,$ai: center);
 	&__item :hover {
@@ -28,19 +29,18 @@
 		text-decoration: none;
 		font-weight: normal;
 		text-transform: capitalize;
-		font-size: 14px;
-		margin: 6px;
+		font-size: 16px;
+		letter-spacing: .8px;
 	}
 	&__item-img {
 		width: 30px;
-		margin-left:15px;
 		margin-top: 5px;
 	}
 }
 
 .tariffs {
 	margin: 6px;
-	width: 270px;
+	width: 230px;
 	@include flex ($jc: space-around,$ai: center);
 	& a:hover {
 		color: $MenuItemHover;
@@ -48,17 +48,17 @@
 	& a {
 		color: $MenuItemColor;
 		text-decoration: none;
-		margin: 6px;
+		margin: 15px;
 	}
 	&__buttom {
-		border: 2px solid $MenuItemColor;
-		width: 85px;
-		height: 30px;
+		border: 1px solid $MenuItemColor;
+		max-width: 85px;
+		max-height: 30px;
 		border-radius: 5px;
 		@include flex();
 	}
 	&__search img {
-		width: 20px;
-		height: 20px;
+		max-width: 20px;
+		max-height: 20px;
 	}
 }

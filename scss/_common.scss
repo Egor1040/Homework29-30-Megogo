@@ -27,14 +27,14 @@ li {
 
 .background {
 	max-width: 1920px;
-	height: 1080px;
+	max-height: 1080px;
 	background: url(../img/HeroBackground.jpg);
 	display: flex;
 	justify-content: center;
 }
 
 .card{
-	max-width: 1140px;
+	width: 1140px;
 	height: 700px;
 	background: url(../img/backgroud-img.jpg);
 	background-size: cover;
