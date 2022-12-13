@@ -35,56 +35,10 @@ li {
 }
 
 .card{
-	width: calc((100% - 1 * 2 * 5px) / 1);
 	max-width: 1140px;
 	height: 700px;
 	background: url(../img/backgroud-img.jpg);
 	background-size: cover;
 	display: flex;
 	flex-direction: column;
-}
-
-@media ("max-width: 340px") {
-	.card {
-		background-size: cover;
-	}
-	.header {
-		max-height: 140px;
-	}
-	.header__logo img {
-			max-width: 70px;
-			max-height: 20px;
-	}
-	.menu {
-		display: flex;
-		flex-wrap: wrap;
-		margin: none;
-	}
-	.tariffs {
-		display: flex;
-		flex-wrap: wrap;
-	}
-}
-
-@media ("max-width: 900px") {
-	.card {
-		background-size: cover;
-	}
-	.header {
-		max-height: 140px;
-	}
-	.header__logo img {
-			max-width: 70px;
-			max-height: 20px;
-	}
-	.menu {
-		display: flex;
-		flex-wrap: wrap;
-		margin: none;
-	}
-	.tariffs {
-		display: flex;
-		flex-wrap: wrap;
-	}
-
 }
