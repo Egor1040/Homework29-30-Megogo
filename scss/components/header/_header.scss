@@ -17,6 +17,7 @@
 }
 
 .menu {
+	margin-right: 65px;
 	width: 650px;
 	@include flex($jc: space-between,$ai: center);
 	&__item :hover {

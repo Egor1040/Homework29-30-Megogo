@@ -68,6 +68,7 @@ li {
 }
 
 .menu {
+  margin-right: 65px;
   width: 650px;
   display: -webkit-box;
   display: -ms-flexbox;
